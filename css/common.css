@@ -27,7 +27,7 @@ ul {
   padding: 0;
   list-style: none;
 }
-/*** Task 1 ***/
+/*** Task 1: List of elements with title ***/
 .item {
   border-radius: 8px;
   padding: 16px;
@@ -49,4 +49,22 @@ ul {
 }
 .item ul li:not(:last-child) {
   margin-bottom: 8px;
+}
+
+/*** Task 2: Gallery ***/
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+.gallery-item img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+@media screen and (min-width: 768px) {
+  .gallery-item {
+    flex-basis: calc((100% - 48px) / 3);
+  }
 }
