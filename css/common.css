@@ -125,11 +125,19 @@ h2 {
 #name-input {
   margin-bottom: 16px;
 }
-/*** Task 4: Login form ***/
 
+/*** Task 4: Login form ***/
 .login-form input {
   margin-top: 8px;
 }
 .login-form label:last-of-type {
   margin-bottom: 16px;
+}
+
+/*** Task 5: BackgroundColor changes ***/
+.widget {
+  background-color: #fff;
+  border-radius: 28px;
+  padding: 20px 20px 40px 20px;
+  text-align: center;
 }
